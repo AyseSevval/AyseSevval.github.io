@@ -1,0 +1,208 @@
+<!-- galeri.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter - Galeri</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Tasarımları */
+        header h1 {
+            font-size: 2rem;
+            color: #c34f4f;
+            background: linear-gradient(45deg, #800000, #897629);
+            -webkit-background-clip: text; 
+            background-clip: text;
+            font-family: "Lucida Console", "Courier New", monospace;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            padding: 35px;
+            margin-top: 40px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        /*menü tasarımları*/
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none !important;
+            outline: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #c34f4f;
+            border-radius: 5px;
+        }
+        /*resimlerin tasarımı*/
+        .gallery-section {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-title {
+            text-align: center;
+            color: #333;
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .gallery-images {
+            display: flex; /*esnek kutu düzeni*/
+            flex-wrap: wrap;
+            justify-content: space-between; /*resimlerin arasındaki boşluk*/
+            gap: 20px; /*resimler arasındaki boşluk oranı*/
+        }
+
+        .gallery-images a {
+            display: block;
+            width: calc(33.333% - 20px); /*her satırda 3 resim */
+            box-sizing: border-box;
+            overflow: hidden; /*taşan kısımları gizler*/
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-images img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+            object-fit: cover; /*resmi kutuya tam sığdırır*/
+        }
+
+        .gallery-images a:hover img {
+            transform: scale(1.2); /*üzerine imleç geldiğinde resmi büyütür*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Harry Potter Galerisi</h1><!--sayfanın başlığı-->
+    </header>
+    <nav><!--mneü-->
+        <ul><!--sırasız liste etiketi-->
+            <li><a href="index.html">Ana Sayfa</a></li><!--diğer sayfalara geçiş linkleri-->
+            <li><a href="genel-bilgi.html">Genel Bilgi</a></li><!--diğer sayfalara geçiş linkleri-->
+            <li><a href="karakterler.html">Karakterler</a></li><!--diğer sayfalara geçiş linkleri-->
+            <li><a href="hogwarts.html">Hogwarts</a></li><!--diğer sayfalara geçiş linkleri-->
+            <li><a href="buyuculuk-terimleri.html">Büyücülük Terimleri</a></li><!--diğer sayfalara geçiş linkleri-->
+            <li><a href="yazar.html">Yazar</a></li><!--diğer sayfalara geçiş linkleri-->
+        </ul>
+    </nav>
+    <main>
+        <section class="gallery-section"><!--galeri başlangıcı-->
+            <h2 class="gallery-title">Harry Potter Evreninden Resimler</h2> <!--başlık-->
+            <div class="gallery-images">
+                <!--resimler-->
+                <a href="https://i.pinimg.com/236x/97/6b/2f/976b2fc38eacb6127777540c2dab81ab.jpg" target="resim1">
+                    <img src="https://i.pinimg.com/236x/97/6b/2f/976b2fc38eacb6127777540c2dab81ab.jpg" alt="Harry Potter 1">
+                </a>
+                <a href="https://i.pinimg.com/236x/5d/ca/16/5dca1638740bdfc8f88ebf7d041c590d.jpg" target="resim2">
+                    <img src="https://i.pinimg.com/236x/5d/ca/16/5dca1638740bdfc8f88ebf7d041c590d.jpg" alt="Harry Potter 2">
+                </a>
+                <a href="https://i.pinimg.com/236x/62/3a/6b/623a6b490ae85b06d1ccf9ac4c43add3.jpg" target="resim3">
+                    <img src="https://i.pinimg.com/236x/62/3a/6b/623a6b490ae85b06d1ccf9ac4c43add3.jpg" alt="Harry Potter 3">
+                </a>
+                <a href="https://i.pinimg.com/236x/ba/08/87/ba0887be091386793348b9d17c971d39.jpg" target="resim4">
+                    <img src="https://i.pinimg.com/236x/ba/08/87/ba0887be091386793348b9d17c971d39.jpg" alt="Harry Potter 4">
+                </a>
+                <a href="https://i.pinimg.com/236x/91/c8/82/91c8824e600fb47dbe36b4f78292a72c.jpg" target="resim5">
+                    <img src="https://i.pinimg.com/236x/91/c8/82/91c8824e600fb47dbe36b4f78292a72c.jpg" alt="Harry Potter 5">
+                </a>
+                <a href="https://i.pinimg.com/236x/62/89/f1/6289f15bfc531661829692aab9bb4d8c.jpg" target="resim6">
+                    <img src="https://i.pinimg.com/236x/62/89/f1/6289f15bfc531661829692aab9bb4d8c.jpg" alt="Harry Potter 6">
+                </a>
+                <a href="https://i.pinimg.com/236x/4b/7c/5b/4b7c5ba7d005024f3dae813e79ca8065.jpg" target="resim7">
+                    <img src="https://i.pinimg.com/236x/4b/7c/5b/4b7c5ba7d005024f3dae813e79ca8065.jpg" alt="Harry Potter 7">
+                </a>
+                <a href="https://i.pinimg.com/236x/a5/9c/d5/a59cd53615aece8bcf96ffd6ffdfa824.jpg" target="resim8">
+                    <img src="https://i.pinimg.com/236x/a5/9c/d5/a59cd53615aece8bcf96ffd6ffdfa824.jpg" alt="Harry Potter 8">
+                </a>
+                <a href="https://i.pinimg.com/474x/7a/de/c9/7adec94d48f304a8e729ff5a529e76a1.jpg" target="resim9">
+                    <img src="https://i.pinimg.com/474x/7a/de/c9/7adec94d48f304a8e729ff5a529e76a1.jpg" alt="Harry Potter 9">
+                </a>
+                <a href="https://i.pinimg.com/236x/7f/7a/7a/7f7a7ad2d4d3b129a7893676abcde01d.jpg" target="resim10">
+                    <img src="https://i.pinimg.com/236x/7f/7a/7a/7f7a7ad2d4d3b129a7893676abcde01d.jpg" alt="Harry Potter 10">
+                </a>
+                <a href="https://i.pinimg.com/236x/88/4b/90/884b9087539c2bd30a212cd0a5638ef1.jpg" target="resim11">
+                    <img src="https://i.pinimg.com/236x/88/4b/90/884b9087539c2bd30a212cd0a5638ef1.jpg" alt="Harry Potter 11">
+                </a>
+                <a href="https://i.pinimg.com/236x/07/3b/a2/073ba2ae34b7fc41ddc367020939f240.jpg" target="resim12">
+                    <img src="https://i.pinimg.com/236x/07/3b/a2/073ba2ae34b7fc41ddc367020939f240.jpg" alt="Harry Potter 12">
+                </a>
+                <a href="https://i.pinimg.com/236x/98/9c/51/989c516eb850a4247e163c21d0393bcc.jpg" target="resim13">
+                    <img src="https://i.pinimg.com/236x/98/9c/51/989c516eb850a4247e163c21d0393bcc.jpg" alt="Harry Potter 13">
+                </a>
+                <a href="https://i.pinimg.com/236x/7b/57/41/7b57419509e63a585d42bd4a6c4092bb.jpg" target="resim14">
+                    <img src="https://i.pinimg.com/236x/7b/57/41/7b57419509e63a585d42bd4a6c4092bb.jpg" alt="Harry Potter 14">
+                </a>
+                <a href="https://i.pinimg.com/236x/8c/2d/9f/8c2d9ff0805c41a4f151b3e15f7cf6d3.jpg" target="resim15">
+                    <img src="https://i.pinimg.com/236x/8c/2d/9f/8c2d9ff0805c41a4f151b3e15f7cf6d3.jpg" alt="Harry Potter 15">
+                </a>
+                <a href="https://i.pinimg.com/236x/73/53/e5/7353e53ab5d43ed5e78703220a2c59dc.jpg" target="resim16">
+                    <img src="https://i.pinimg.com/236x/73/53/e5/7353e53ab5d43ed5e78703220a2c59dc.jpg" alt="Harry Potter 16">
+                </a>
+                <a href="https://i.pinimg.com/236x/7a/f3/1f/7af31ff4e747dc2df40932684ae1863c.jpg" target="resim17">
+                    <img src="https://i.pinimg.com/236x/7a/f3/1f/7af31ff4e747dc2df40932684ae1863c.jpg" alt="Harry Potter 17">
+                </a>
+                <a href="https://i.pinimg.com/236x/fb/6b/07/fb6b07807e934c6aec65b395d706c21f.jpg" target="resim18">
+                    <img src="https://i.pinimg.com/236x/fb/6b/07/fb6b07807e934c6aec65b395d706c21f.jpg" alt="Harry Potter 18">
+                </a>
+                <a href="https://i.pinimg.com/236x/fc/d0/93/fcd093adad8f1621e8e6736ebc4b5f82.jpg" target="resim19">
+                    <img src="https://i.pinimg.com/236x/fc/d0/93/fcd093adad8f1621e8e6736ebc4b5f82.jpg" alt="Harry Potter 19">
+                </a>
+                <a href="https://i.pinimg.com/236x/f3/51/74/f351745186b6bd56b563ed25e4edfcdc.jpg" target="resim20">
+                    <img src="https://i.pinimg.com/236x/f3/51/74/f351745186b6bd56b563ed25e4edfcdc.jpg" alt="Harry Potter 20">
+                </a>
+                <a href="https://i.pinimg.com/236x/05/4d/27/054d27bcf0f34fbd26c05b155237deea.jpg" target="resim21">
+                    <img src="https://i.pinimg.com/236x/05/4d/27/054d27bcf0f34fbd26c05b155237deea.jpg" alt="Harry Potter 21">
+                </a>
+                <a href="https://i.pinimg.com/236x/de/4f/6f/de4f6f159c7ac6f4105bfabe8c412f4e.jpg" target="resim22">
+                    <img src="https://i.pinimg.com/236x/de/4f/6f/de4f6f159c7ac6f4105bfabe8c412f4e.jpg" alt="Harry Potter 22">
+                </a>
+                <a href="https://i.pinimg.com/236x/b3/61/85/b361852ce98a7afe3c02d219fc5bc58d.jpg" target="resim23">
+                    <img src="https://i.pinimg.com/236x/b3/61/85/b361852ce98a7afe3c02d219fc5bc58d.jpg" alt="Harry Potter 23">
+                </a>
+                <a href="https://i.pinimg.com/236x/22/41/76/224176c98641bb9cd4c5c143dc9a6d94.jpg" target="resim24">
+                    <img src="https://i.pinimg.com/236x/22/41/76/224176c98641bb9cd4c5c143dc9a6d94.jpg" alt="Harry Potter 24">
+                </a>
+                <a href="https://i.pinimg.com/474x/50/1c/b7/501cb7a8997ee3642190e3474a2f2f9f.jpg" target="resim25">
+                    <img src="https://i.pinimg.com/474x/50/1c/b7/501cb7a8997ee3642190e3474a2f2f9f.jpg" alt="Harry Potter 25">
+                </a>
+                <a href="https://i.pinimg.com/236x/02/3f/7a/023f7a051e0d9522308a687b3e1cb0db.jpg" target="resim26">
+                    <img src="https://i.pinimg.com/236x/02/3f/7a/023f7a051e0d9522308a687b3e1cb0db.jpg" alt="Harry Potter 26">
+                </a>
+                <a href="https://i.pinimg.com/236x/83/da/76/83da76e542c1b3600165e16327b9f078.jpg" target="resim27">
+                    <img src="https://i.pinimg.com/236x/83/da/76/83da76e542c1b3600165e16327b9f078.jpg" alt="Harry Potter 27">
+                </a>
+            </div><!--resimlerin sonu-->
+        </section>
+    </main>
+</body>
+</html>

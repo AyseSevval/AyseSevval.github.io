@@ -1,0 +1,196 @@
+<!-- yazar.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter - Yazar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* genel tasarım */
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* başlık tasarımı */
+header h1 {
+    font-size: 2rem;
+    color: #c34f4f;
+    background: linear-gradient(45deg, #800000, #897629);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* menü tasarımı */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #c34f4f;
+    border-radius: 5px;
+}
+
+/* ana kısım tasarımı */
+main {
+    padding: 20px;
+}
+
+/* ana başlık tasarımı */
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* paragraf tasarımı */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* liste tasarımı */
+ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    padding-left: 20px;
+
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+ul li a {
+    color: #800000;
+    text-decoration: none;
+}
+
+/* tablo tasarımı */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #c34f4f;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Harry Potter Serisinin Yazarı - J.K. Rowling</h1><!--sayfa başlığı-->
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li><!--diğer sayfalara geçiş linkleri-->
+            <li><a href="genel-bilgi.html">Genel Bilgi</a></li><!--diğer sayfalara geçiş linkleri-->
+            <li><a href="karakterler.html">Karakterler</a></li><!--diğer sayfalara geçiş linkleri-->
+            <li><a href="hogwarts.html">Hogwarts</a></li><!--diğer sayfalara geçiş linkleri-->
+            <li><a href="buyuculuk-terimleri.html">Büyücülük Terimleri</a></li><!--diğer sayfalara geçiş linkleri-->
+            <li><a href="galeri.html">Galeri</a></li><!--diğer sayfalara geçiş linkleri-->
+        </ul>
+    </nav>
+    <main>
+        <section><!--sayfa bölümü-->
+            <h2>J.K. Rowling Kimdir?</h2><!--alt başlık-->
+            <!--resim-->
+            <a href="https://i.pinimg.com/236x/14/c3/ab/14c3abe9fb45187512f478d7d0753fd0.jpg" target="_blank">
+                <img src="https://i.pinimg.com/236x/14/c3/ab/14c3abe9fb45187512f478d7d0753fd0.jpg" alt="J.K Rowling" width="100">
+            </a>
+            <p><!--yazar hakkında bilgilendirme paragrafı-->
+                Joanne Rowling, daha çok bilinen adıyla J.K. Rowling, Harry Potter serisinin yazarıdır. 31 Temmuz 1965'te
+                İngiltere'de doğmuştur. Harry Potter serisini yazarken hem kendi hayatından hem de çevresinden ilham almıştır.
+                Serinin ilk kitabı olan "Harry Potter ve Felsefe Taşı" 1997 yılında yayımlanmıştır.
+            </p>
+        </section>
+        <section>
+            <h2>Harry Potter Serisinin Ortaya Çıkışı</h2>
+            <p><!--serinin çıkış süreci-->
+                J.K. Rowling, Harry Potter fikrini 1990 yılında Manchester'dan Londra'ya yaptığı bir tren yolculuğu sırasında
+                bulmuştur. İlk kitabı yazması birkaç yılını almış ve birçok yayınevinden reddedildikten sonra nihayet Bloomsbury
+                Yayınları tarafından kabul edilmiştir. Harry Potter serisi kısa sürede dünya çapında bir fenomen haline gelmiştir.
+            </p>
+        </section>
+        <section>
+            <h2>Etkisi ve Başarıları</h2>
+            <ul><!--sırasız liste-->
+                <li><strong>Kitap Satışları:</strong> Harry Potter serisi dünya genelinde 500 milyondan fazla kopya satmıştır.</li>
+                <li><strong>Filmler:</strong> Seriden uyarlanan filmler, sinema tarihinin en çok hasılat yapan serilerinden biri olmuştur.</li>
+                <li><strong>Ödüller:</strong> J.K. Rowling, pek çok edebiyat ödülüne layık görülmüştür.</li>
+                <li><strong>Hayır İşleri:</strong> Rowling, kazancının önemli bir kısmını hayır işlerine bağışlamaktadır.</li>
+            </ul>
+        </section>
+        <section><!--sayfanın 2. bölümü -->
+            <h2>Yazarın Diğer Eserleri</h2><!--alt başlık-->
+            <p><!--kitapları hakkında bilgilendirme paragrafı-->
+                Harry Potter serisi dışında, J.K. Rowling "Fantastik Canavarlar Nelerdir, Nerede Bulunurlar?" gibi yan kitaplar
+                ve Robert Galbraith takma adıyla dedektif romanları yazmıştır. İşte bazı önemli eserleri:
+            </p>
+            <ul><!--sırasız liste-->
+                <caption>Kitaplara ulaşmak için üstüne tıklayabilirsiniz.</caption><!--üst bilgi-->
+                <li><a href="https://www.dr.com.tr/kitap/fantastik-canavarlar-nelerdir-nerede-bulunurlar-genisletilmis-baski/cocuk-ve-genclik/genclik-10-yas/fantastikbilim-kurgu/urunno=0001766317001?srsltid=AfmBOoqHuIBR8a6k9jgKm1WYVN4lZjk6rfgG6vKZPrTZlOm9CDKVYSmn" target="_blank">Fantastik Canavarlar Nelerdir, Nerede Bulunurlar?</a></li>
+                <li><a href="https://www.amazon.com/Cuckoos-Calling-Robert-Galbraith/dp/0751549258" target="_blank">Güvercinlerin Çağrısı (The Cuckoo's Calling) - Robert Galbraith</a></li>
+                <li><a href="https://www.dr.com.tr/kitap/ipekbocegi-cormoran-strike-2/edebiyat/roman/polisiye/urunno=0000000650606?srsltid=AfmBOooQyS-E3dqThm6Wx830IkQGoUBOU1j-iwnLmjjLjKUNiaJBMRJt" target="_blank">İpek Böceği (The Silkworm) - Robert Galbraith</a></li>
+                <li><a href="https://www.dr.com.tr/kitap/career-of-evil-cormoran-strike-/robert-galbraith/foreign-languages/literature-and-novel/mystery-crime-thriller/urunno=0000000665142?srsltid=AfmBOooXgYsQzfnQ1Fbdl4dNFZVpiSUs3s7bV1Nt7aDM7G1VJquxglGO" target="_blank">Kariyer Suikasti (Career of Evil) - Robert Galbraith</a></li>
+                <li><a href="https://www.dr.com.tr/ekitap/lethal-white?srsltid=AfmBOopk9IWBPcBocUEgLC121RK5JuXuVFHoVHfuEfXGH5Ct6uiG6aJF" target="_blank">Lethal White - Robert Galbraith</a></li>
+                <li><a href="https://www.dr.com.tr/kitap/troubled-blood-strike-/robert-galbraith/foreign-languages/literature-and-novel/mystery-crime-thriller/urunno=0002089179001?srsltid=AfmBOoqA-FyrFTD-EoE_tV4mW0lLJEqKPgOGJd1_sdV1dngWrNsK-l94" target="_blank">Troubled Blood - Robert Galbraith</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

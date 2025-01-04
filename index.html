@@ -1,0 +1,104 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Hakkında</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+header h1 {
+    text-align: center; /*başlığı ortalar*/
+    font-size: 5rem; 
+    color: #fff;
+    background: linear-gradient(45deg, #800000, #897629);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    font-family:  "Lucida Console", "Courier New", monospace;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    padding: 35px;
+    margin-top: 40px; /* üst boşluk oranı*/
+    letter-spacing: 10px; /*harflerin arasındaki mesafe*/
+    text-transform: uppercase; 
+}
+    
+body {
+    background-image: url('arkaplan.jpg'); /*arka plan resmi*/
+    background-size: cover; /*resmi tam ekrana göre ayarlar*/
+    background-position: center; /*resmi ortalar*/
+    background-repeat: no-repeat; /*resmin tekrarlanmasını engeller*/
+    height: 100vh; /*sayfa yüksekliği*/
+    margin: 0; /*sayfa kenar boşluklarını kaldırır*/
+    background-attachment: fixed; /*arka plan resmini sabit tutar*/
+}
+nav {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /*liste işaretlerini kaldırır */
+    margin: 0;
+    padding: 0;
+    display: flex; /*flexbox düzenini kullanır */
+    justify-content: center; /*bağlantıları ortalar*/
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    display: block; /*blok yapar*/
+    color: rgb(8, 8, 8); 
+    background-color: #d58183; 
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-decoration: none; /*alt çizgiyi kaldırır*/
+    font-size: 1.4em;
+    font-family:"Lucida Console", "Courier New", monospace;;
+    transition: background-color 0.3s ease, transform 0.2s ease /*geçiş efekti*/
+}
+p {
+            font-family:  "Lucida Console", "Courier New", monospace;
+            font-size: 20px;
+            color: #e58d8d; 
+            line-height: 1.8; 
+            text-align: center;
+            margin: 50px; 
+            padding: 20px; 
+            background-color: #f0f0f0;
+            
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            font-style: italic; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Harry   Potter</h1> <!--en üstteki başlık-->
+    </header>
+    <p>Harry Potter'ın büyülü evrenine hoşgeldiniz.<!--paragrafın ilk kısmı-->
+        <br><!--satır atlama etiketi-->
+        <!--safanın içeriği hakkında kısa bir bilgilendirme-->
+    Bu sayfa size seri hakkında bilgiler verecek ve bu büyülü evreni biraz olsun sizin için aydınlatacaktır. 
+    Evrendeki karakterler, mekanlar ve  büyüler ile ilgili somut bir fikir sahibi olmanızı sağlayacaktır.
+    Kendinizi hangi binaya ait hissediyorsunuz?Seçin ve sayfanın tadını çıkarın.
+        <br> 
+    ALAHOMORA!!! KAPILAR AÇILSIN!
+    </p>
+    <br>
+    <nav><!--navigasyon menüsü-->
+        <ul> <!--sırasız liste etiketi-->
+            <li><a href="genel-bilgi.html">Seri Hakkında Genel Bilgi</a></li> <!--navigasyon linkleri ve menü isimleri-->
+            <li><a href="karakterler.html">Karakterler</a></li><!--navigasyon linkleri ve menü isimleri-->
+            <li><a href="hogwarts.html">Hogwarts</a></li><!--navigasyon linkleri ve menü isimleri-->
+            <li><a href="buyuculuk-terimleri.html">Büyücülük Terimleri</a></li><!--navigasyon linkleri ve menü isimleri-->
+            <li><a href="yazar.html">Yazar</a></li><!--navigasyon linkleri ve menü isimleri-->
+            <li><a href="galeri.html">Galeri</a></li><!--navigasyon linkleri ve menü isimleri-->
+        </ul>
+    </nav>
+    
+</body>
+</html>

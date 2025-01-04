@@ -1,0 +1,199 @@
+<!-- genel-bilgi.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter - Genel Bilgi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>        
+    /*css tasarımları*/
+        header h1 {
+    font-size: 2rem; /*yazı boyutu*/
+    color: #c34f4f; /*yazı rengi*/
+    background: linear-gradient(45deg, #800000, #897629);/*arka plan degradesi*/
+    -webkit-background-clip: text; 
+    background-clip: text;
+    font-family:  "Lucida Console", "Courier New", monospace;/*yazı tipi*/
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /*yazının gölge efekti*/
+    padding: 35px;
+    margin-top: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase; /*yazı tamamen büyük harfe dönüştürülüyor*/
+}
+
+nav {
+    background-color: #333; /*arka plan rengi*/
+    padding: 10px 0;/*satırlar arası boşluk*/
+    text-align: center; /*yazıyı ortalar*/
+    color: #f8f5f5;
+
+}
+
+nav ul {
+    list-style-type: none; /*liste işaretçilerini kaldırır*/
+    margin: 0; /*liste dış kenar boşluğu*/
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    text-decoration: none !important;/*alt çizgiyi kaldırır*/
+    outline: none; 
+    color: white; /*metin rengi*/
+    font-size: 18px; /*yazı boyutu*/
+    font-weight: bold; /*kalın yazı*/
+    padding: 10px 20px; /*yazının etrafındaki boşluk oranı*/
+    transition: background-color 0.3s ease; 
+}
+nav ul li a:hover {
+    background-color:  #c34f4f; /*arka plan rengi*/
+    border-radius: 5px; /*yuvarlaklaştırılmış köşe*/
+}
+p{
+    font-family:  "Lucida Console", "Courier New", monospace;
+            font-size: 20px;
+            color: #e58d8d; 
+            line-height: 1.8; 
+            text-align: center;
+            margin: 50px; 
+            padding: 20px; 
+            background-color: #f0f0f0;
+            
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*gölge efekti*/
+            font-style: italic; /*italik yazı*/
+}
+section {
+            width: 70%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-family:  "Lucida Console", "Courier New", monospace;
+            font-size: 25px;
+        }
+
+        table {
+            width: 100%;/*tablo genişliği*/
+            margin-top: 20px; /*üst boşluk*/
+            border-collapse: collapse;  /*sınırları birleştirir*/
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            font-family:  "Lucida Console", "Courier New", monospace;
+            font-size: 18px;
+            
+
+        }
+
+        th {
+            background-color:#c34f4f;
+            color: white;
+            font-family:  "Lucida Console", "Courier New", monospace;
+            font-size: 18px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+        caption{
+             text-align: justify; /*yalnızca başlık için metni iki yana yaslar*/
+             font-family:  "Lucida Console", "Courier New", monospace;
+            font-size: 15px;
+        }
+        a, a:visited, a:focus, a:hover {
+    text-decoration: none; /*alt çizgiyi kaldırır*/
+    outline: none; /*odak outline kaldırır*/
+    color: inherit; /*kendisinden önceki rengi kullanır*/
+}
+
+
+        
+</style>
+</head>
+<body>
+    <header>
+        <h1>Harry Potter Serisi Hakkında Genel Bilgi</h1> <!--en üst başlık-->
+    </header>
+    <nav> <!--navigasyon menüsü-->
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li> <!--ana sayfa geçiş bağlantısı-->
+            <li><a href="karakterler.html">Karakterler</a></li> <!--diğer sayfalara geçiş linkleri-->
+            <li><a href="hogwarts.html">Hogwarts</a></li> <!--diğer sayfalara geçiş linkleri-->
+            <li><a href="buyuculuk-terimleri.html">Büyücülük Terimleri</a></li> <!--diğer sayfalara geçiş linkleri-->
+            <li><a href="yazar.html">Yazar</a></li> <!--diğer sayfalara geçiş linkleri-->
+            <li><a href="galeri.html">Galeri</a></li> <!--diğer sayfalara geçiş linkleri-->
+            
+        </ul>
+    </nav>
+    <main>
+        <section> <!--sayfanın ilk kısmı-->
+            <p> <!--paragraf etiketi-->
+                Harry Potter serisi, J.K. Rowling tarafından yazılmıştır. Daha sonrasında bu büyülü hikaye beyaz perdeye taşınmıştır.
+                Hikaye,teyzesi ve eniştesinin yanında yaşayan genç büyücü Harry Potter ve onun arkadaşları Hermione Granger ve Ron Weasley'in maceralarını takip eder.
+                Hogwarts Büyücülük ve Cadılık Okulu'nda eğitim görürken, karanlık büyücü Lord Voldemort'a karşı verdikleri mücadeleler ile maceradan maceraya koşarlar.
+                Daha bebekken ailesini kaybeden ve Karanlık Lord'un lanetinden kurtulan Potter dostluk, sevgi ve cesaretiyle karanlığı alt etmeye çalışır.
+                
+            </p>
+        </section>
+        <section> <!--sayfanın ikinci kısmı-->
+            <h2>Kitapların Sıralaması</h2> <!--tablo başlığı-->
+            <table> <!--tablo üst bilgisi-->
+                <caption>Kitapların üstüne tıklayarak filmleri izleyebilirsiniz.</caption> <!--tablo üst bilgisi-->
+                <tr> <!--tablo ilk satırı-->
+                    <th>Kitap</th> <!--tablodaki kitap isimleri sütunu-->
+                    <th>Yayın Yılı</th><!--tablodaki yayın yılı sütunu-->
+                </tr>
+                <tr> <!--tablonun verilerinin bulunduğu satırlar-->
+                    <td><a href="https://www.blutv.com/filmler/yabanci/harry-potter-ve-felsefe-tasi/harry-potter-ve-felsefe-tasi" target="_blank">Harry Potter ve Felsefe Taşı</a>
+                    </td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.blutv.com/filmler/yabanci/harry-potter-ve-sirlar-odasi" target="_blank">Harry Potter ve Sırlar Odası</a></td>
+                    <td>1998</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.blutv.com/filmler/yabanci/harry-potter-ve-azkaban-tutsagi/harry-potter-ve-azkaban-tutsagi" target="_blank">Harry Potter ve Azkaban Tutsağı</a></td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.blutv.com/filmler/yabanci/harry-potter-ve-ates-kadehi/harry-potter-ve-ates-kadehi" target="_blank">Harry Potter ve Ateş Kadehi</a></td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.blutv.com/filmler/yabanci/harry-potter-ve-zumruduanka-yoldasligi/harry-potter-ve-zumruduanka-yoldasligi" target="_blank">Harry Potter ve Zümrüdüanka Yoldaşlığı</a></td>
+                    <td>2003</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.blutv.com/filmler/yabanci/harry-potter-ve-melez-prens" target="_blank">Harry Potter ve Melez Prens</a></td>
+                    <td>2005</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.blutv.com/filmler/yabanci/harry-potter-ve-olum-yadigarlari-bolum-1/harry-potter-ve-olum-yadigarlari-bolum-1" target="_blank">Harry Potter ve Ölüm Yadigarları</a></td>
+                    <td>2007</td>
+                </tr>
+            </table><!--tablo sonu-->
+        </section> 
+    </main> 
+</body>
+</html>

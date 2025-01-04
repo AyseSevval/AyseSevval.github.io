@@ -1,0 +1,370 @@
+<!-- hogwarts.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter - Hogwarts</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header h1 {
+    font-size: 2rem; 
+    color: #c34f4f;
+    background: linear-gradient(45deg, #800000, #897629);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    font-family:  "Lucida Console", "Courier New", monospace;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    padding: 35px;
+    margin-top: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+}
+nav {
+    background-color: #333; 
+    padding: 10px 0;
+    text-align: center; 
+}
+
+nav ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    text-decoration: none !important;
+    outline: none; 
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease; 
+}
+nav ul li a:hover {
+    background-color:  #c34f4f; 
+    border-radius: 5px;
+}
+section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+article {
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #c34f4f;
+    font-size: 22px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+}
+
+th {
+    background-color: #c34f4f;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+caption {
+    text-align: justify;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 15px;
+}
+.hogwarts-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.hogwarts-images a {
+    display: block;
+}
+
+.hogwarts-images img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /*resimlerin max genişliği */
+    object-fit: cover; /* resimleri düzgün bir şşekilde sığdırır*/
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hogwarts Büyücülük ve Cadılık Okulu</h1><!--ana başlık-->
+    </header>
+    <nav><!--menü-->
+        <ul><!--sırasız liste etiketi-->
+            <li><a href="index.html">Ana Sayfa</a></li><!--diğer sayfalara geçiş bağlantıları-->
+            <li><a href="genel-bilgi.html">Genel Bilgi</a></li><!--diğer sayfalara geçiş bağlantıları-->
+            <li><a href="karakterler.html">Karakterler</a></li><!--diğer sayfalara geçiş bağlantıları-->
+            <li><a href="buyuculuk-terimleri.html">Büyücülük Terimleri</a></li><!--diğer sayfalara geçiş bağlantıları-->
+            <li><a href="yazar.html">Yazar</a></li><!--diğer sayfalara geçiş bağlantıları-->
+            <li><a href="galeri.html">Galeri</a></li><!--diğer sayfalara geçiş bağlantıları-->
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Hogwarts Hakkında</h2>
+            <div class="hogwarts-images">
+                <!--hogwarts ile ilgili resimler-->
+                <a href="https://i.pinimg.com/474x/a4/b9/02/a4b902d9cb8581378ec91e7ddd0d7e7c.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/474x/a4/b9/02/a4b902d9cb8581378ec91e7ddd0d7e7c.jpg" alt="HOGWARTS" width="300">
+                </a>
+                <a href="https://i.pinimg.com/236x/2c/67/8e/2c678e058d1ef716e27c97d099fe7489.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/236x/2c/67/8e/2c678e058d1ef716e27c97d099fe7489.jpg" alt="Hogwarts Castle" width="300">
+                </a>
+                <a href="https://i.pinimg.com/236x/b5/3c/6c/b53c6c2ae4238ad5d19d60c86552ba8b.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/236x/b5/3c/6c/b53c6c2ae4238ad5d19d60c86552ba8b.jpg" alt="Hogwarts School" width="300">
+                </a>
+                <a href="https://i.pinimg.com/474x/5f/42/f7/5f42f73aaa1dc2fc62bd63dc374ae25f.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/474x/5f/42/f7/5f42f73aaa1dc2fc62bd63dc374ae25f.jpg" alt="Hogwarts School" width="200">
+                </a>
+                
+            </div><!--resimlerin sonu-->
+            <p><!--sayfa hakkında genel bilgilendirme paragrafı-->
+                Hogwarts Cadılık ve Büyücülük Okulu, İskoç Yaylaları'nda bulunan bir İngiliz büyücülük okuludur. 
+                Büyük Britanya ve İrlanda'dan büyü dünyasındaki öğrencileri kabul etmektedir. Sihir Bakanlığı tarafından kontrol edilen devlete ait bir okuldur. 
+                Okulun kesin konumu, bir büyü sayesinde gizlendiği için tam olarak ortaya çıkarılamamaktadır. Bu büyü sayesinde muggle kişiler tarafından görülememektedir. 
+                İçerisinde 4 tane farklı özelliklere sahip bina bulunmaktadır. Bu sayfa bu binalar ile ilgili bilgiler verecektir.Aynı zamanda binaların en ünlü büyücülerini listelemektedir.
+            </p>
+        </section>
+        <section>
+            <h2>Binalar</h2><!--tablo başlığı-->
+            <table>
+                <tr>
+                    <th>Bina</th><!--tablonun birinci sütunu-->
+                    <th>Özellikler</th><!--tablonun ikinci sütunu-->
+                    <th>Sloganı</th><!--tablonun üçüncü sütunu-->
+                    <th>Önemli Büyücüleri</th><!--tablonun dördüncü sütunu-->
+                </tr>
+                <tr>
+                    <!--tablodaki veriler-->
+                    <td>
+                        <!--bina ile ilgili resim-->
+                        <a href="https://i.pinimg.com/236x/a5/be/e6/a5bee63b428e1cf5573cd9f268890fb4.jpg" target="_blank">
+                            <img src="https://i.pinimg.com/236x/a5/be/e6/a5bee63b428e1cf5573cd9f268890fb4.jpg" alt="Gryffindor" width="100">
+                        </a>
+                        <p>Gryffindor</p>
+                    
+                    </td>
+                    <td>Godric Gryffindor tarafından kurulmuştur.<!--ikinci sütun verileri-->
+                        <br>
+                        Sembol hayvanı aslandır.
+                        <br>
+                        Renkleri kırmızı ve altın sarısıdır.
+                        <br>
+                        Ateş elementine karşılık gelir.
+                        <br>
+                        Seçmen şapka bu binaya öğrencileri seçerken cesaret, yiğitlik ve kahramanlık özelliklerine bakar. 
+                        <br>
+                    </td>
+                    <td>
+                        "Sen Gryffindor'a ait olabilirsin,
+                        <br>
+                         Yüreğinde cesurların yaşadığı,
+                         <br>
+                         Cesaretleri, sinirleri ve şövalyelikleri
+                         <br>
+                         Gryffindorları birbirinden ayırır"
+                         <br>
+                    </td>
+                    <td>
+                        <li>Harry Potter</li>
+                        <li>Hermione Granger</li>
+                        <li>Ron Weasley</li>
+                        <li>Albus Dumbledore</li>
+                        <li>Minerva McGonagall</li>
+                        <li>Sir Nicholas de Mimsy-Porpington</li>
+                </td>
+
+                </tr>
+                <tr>
+                    <td>
+                         <!--bina ile ilgili resim-->
+                        <a href="https://i.pinimg.com/236x/0b/97/74/0b97741d392ddaaac2ab95e0b484a8aa.jpg" target="_blank">
+                            <img src="https://i.pinimg.com/236x/0b/97/74/0b97741d392ddaaac2ab95e0b484a8aa.jpg" alt="Hufflepuff" width="100">
+                        </a>
+                        <p>Hufflepuff</p>
+                        
+                    </td>
+                    <td>Helga Hufflepuff tarafından kurulmuştur.<!--ikinci sütun verileri-->
+                        <br>
+                        Sembol hayvanı porsuktur.
+                        <br>
+                        Renkleri sarı ve siyahtır.
+                        <br>
+                        Toprak elementine karşılık gelir. 
+                        <br>
+                        Seçmen şapka bu binaya öğrencileri seçerken çalışkanlık, sadakat ve adalet özelliklerine bakar.
+                    </td>
+                    <td><!--3. sütun verileri-->
+                        "Belki de düşersin Hufflepuff’a,
+                        <br>
+                        Haksızlığı hemen kaldırıp rafa,
+                        <br>
+                        Adalet uğruna savaş verirsin,
+                        <br>
+                        Her yere mutluluk götürmek için."
+                        <br>
+                    </td>
+                    <td><!--4. sütun verileri-->
+                        <li>Madam Sprout</li>
+                        <li>Giffard Abbott</li>
+                        <li>Diego Caplan</li>
+                        <li>Cedric Diggory</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         <!--bina ile ilgili resim-->
+                        <a href="https://i.pinimg.com/236x/f2/07/6c/f2076c9c1ba03d4685c54f21f53fac04.jpg" target="_blank">
+                            <img src="https://i.pinimg.com/236x/f2/07/6c/f2076c9c1ba03d4685c54f21f53fac04.jpg" alt="Ravenclaw" width="100">
+                        </a>
+                        <p>Ravenclaw</p><!--bina resmi-->
+                        
+                    </td>
+                    <td>Orta Çağ Cadısı Rowena Ravenclaw tarafından kurulmuştur.<!--ikinci sütun verileri-->
+                        <br>
+                        Sembol hayvanı kartaldır.
+                        <br>
+                        Renkleri mavi ve bronzdur.
+                        <br>
+                        Hava elementine karşılık gelir.
+                        <br>
+                        Seçmen şapka bu binaya öğrencileri seçerken zeka, bilgelik ve yaratıcılık özelliklerine bakar.
+                        <br>
+                    </td>
+                    <td><!--3. sütun verileri-->
+                        "Ravenclaw kısmetin belki,
+                        <br>
+                        Oradakilerin hiç çıkmaz sesi,
+                        <br>
+                        Mantıktır onlarca önemli olan,
+                        <br>
+                        Öyle kurtulurlar tüm sorunlardan."
+                        <br>
+                    </td>
+                    <td><!--4. sütun verileri-->
+                        <li>Filius Flitwick</li>
+                        <li>Garrick Ollivander</li>
+                        <li>Luna Lovegood</li>
+                        <li>Ignatia Wildsmith</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         <!--bina ile ilgili resim-->
+                        <a href="https://i.pinimg.com/236x/08/66/28/08662841fb46c8861afdd515cb492c72.jpg" target="_blank">
+                            <img src="https://i.pinimg.com/236x/08/66/28/08662841fb46c8861afdd515cb492c72.jpg" alt="Slytherin" width="100">
+                        </a>
+                        <p>Slytherin</p>
+                        
+                    </td>
+                    <td>Salazar Slytherin tarafından kurulmuştur.<!--ikinci sütun verileri-->
+                        <br>
+                        Sembol hayvanı yılandır.
+                        <br>
+                        Renkleri yeşil ve gümüştür.
+                        <br>
+                        Su elementine karşılık gelir.
+                        <br>
+                        Seçmen şapka bu binaya öğrencileri seçerken hırs, kurnazlık ve liderlik özelliklerine bakar.
+                    </td>
+                    <td><!--3. sütun verileri-->
+                        "Ya da belki Slytherin'de,
+                        <br>
+                        Gerçek arkadaş edineceksin
+                        <br>
+                        Bu kurnaz insanlar her yolu kullanır,
+                        <br>
+                        Amaçlarına ulaşmak için."
+                        <br>
+                    </td>
+                    <td><!--4. sütun verileri-->
+                        <li>Severus Snape</li>
+                        <li>Merlin</li>
+                        <li>Tom Riddle</li>
+                        <li>Horace Slughorn</li>
+                        <li>The Bloody Baron</li>
+                    </td>
+                </tr>
+            </table><!--tablo sonu-->
+        </section>
+    </main>
+</body>
+</html>
