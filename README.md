@@ -1,2 +1,2 @@
 # AyseSevval.github.io
-Bilgisayar mühendisliğine giriş dönem projesi
+BMG Dönem Projesi
